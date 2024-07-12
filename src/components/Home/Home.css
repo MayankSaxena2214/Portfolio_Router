@@ -1,0 +1,18 @@
+
+/* for main1 div media query for less than 500x695 */
+@media screen and (max-width: 500px) {
+    .intro{
+        width: 90%;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .main1{
+        width: 100%;
+        margin-left:10px;
+        margin-right:10px;
+        flex-wrap:wrap;
+    }
+    .pretext{
+        font-size:70px;
+    }
+}
