@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope, FaUser, FaCode } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import { AiOutlineFileText } from 'react-icons/ai';
-import { FiMessageCircle } from 'react-icons/fi';
+import { FiGithub } from 'react-icons/fi';
 import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
 import { SiCodingninjas } from "react-icons/si";
@@ -28,7 +28,7 @@ const Socials = () => {
       {/* GitHub */}
       <div className="flex items-center justify-center mb-4">
         <a href="https://github.com/mayanksaxena2214" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="text-gray-800" size={32} />
+          <FiGithub className="text-gray-800" size={32} color='white'/>
         </a>
         </div>      
       {/* WhatsApp */}

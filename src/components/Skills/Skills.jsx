@@ -32,10 +32,15 @@ function Skills() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
       <h2 className="text-4xl font-bold mb-8">Skills</h2>
-      <p className="text-xl mb-12 text-center">I enjoy diving into and learning new things. Here's a list of technologies I've worked with.</p>
+      <p className="text-xl mb-12 text-center">
+        I enjoy diving into and learning new things. Here's a list of technologies I've worked with.
+      </p>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
         {skills.map((skill, index) => (
-          <div key={index} className="flex mt-4 flex-col items-center">
+          <div
+            key={index}
+            className="flex flex-col items-center p-4 transition-transform transform hover:scale-110 hover:shadow-lg bg-gray-800 rounded-lg"
+          >
             <div className="text-5xl mb-4">{skill.icon}</div>
             <p className="text-lg">{skill.label}</p>
           </div>
@@ -44,5 +49,6 @@ function Skills() {
     </div>
   );
 }
+
 
 export default Skills;

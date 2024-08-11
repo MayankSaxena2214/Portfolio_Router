@@ -92,8 +92,15 @@ function Certifications() {
       <h2 className="text-4xl font-bold mb-8">Certifications</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {certifications.map((cert, index) => (
-          <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center">
-            <img src={cert.imageUrl} alt={`${cert.title} Certificate`} className="w-full h-48 object-cover rounded-t-lg" />
+          <div 
+            key={index} 
+            className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <img 
+              src={cert.imageUrl} 
+              alt={`${cert.title} Certificate`} 
+              className="w-full h-48 object-cover rounded-t-lg transition-transform transform hover:scale-105"
+            />
             <div className="flex-1 p-4">
               <h3 className="text-2xl font-semibold mb-2">{cert.title}</h3>
               <p className="text-lg mb-4">{cert.organization}</p>
