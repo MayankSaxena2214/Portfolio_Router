@@ -16,7 +16,7 @@ function Footer() {
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Reach Me</span>
               </a>
               {/* button for downloading the resume */}
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-4"><a href="https://drive.google.com/file/d/15rBq6XfD8IEWgUnnnE31gae9jV-XGnMO/view?usp=drive_link">Download Resume</a></button>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-4"><a href="https://drive.google.com/file/d/1qoKE86uHP01kb4hV5mD2fSEPYSXWL3E8/view?usp=sharing">Download Resume</a></button>
           </div>
 
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
