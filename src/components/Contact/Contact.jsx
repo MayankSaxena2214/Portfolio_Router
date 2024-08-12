@@ -1,8 +1,10 @@
 import React from 'react'
+import { Zoom } from 'react-awesome-reveal'
 
 function Contact() {
   return (
     <>
+    <Zoom>
       <h1>Contact form</h1>
       <section className="bg-white dark:bg-black">
     <div className="container px-6 py-12 mx-auto">
@@ -54,6 +56,7 @@ function Contact() {
         </div>
     </div>
 </section>
+</Zoom>
     </>
   )
 }
