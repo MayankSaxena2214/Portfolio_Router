@@ -4,6 +4,7 @@ import { DiMongodb } from 'react-icons/di';
 import { SiTypescript, SiNestjs, SiRedux, SiTailwindcss } from 'react-icons/si';
 import { SiExpress } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
+import {Bounce} from "react-awesome-reveal"
 
 const skills = [
   { icon: <FaHtml5 className="text-red-600" />, label: 'HTML' },
@@ -35,8 +36,10 @@ function Skills() {
       <p className="text-xl mb-12 text-center">
         I enjoy diving into and learning new things. Here's a list of technologies I've worked with.
       </p>
+      <Bounce>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
         {skills.map((skill, index) => (
+          <Bounce>
           <div
             key={index}
             className="flex flex-col items-center p-4 transition-transform transform hover:scale-110 hover:shadow-lg bg-gray-800 rounded-lg"
@@ -44,8 +47,10 @@ function Skills() {
             <div className="text-5xl mb-4">{skill.icon}</div>
             <p className="text-lg">{skill.label}</p>
           </div>
+          </Bounce>
         ))}
       </div>
+      </Bounce>
     </div>
   );
 }

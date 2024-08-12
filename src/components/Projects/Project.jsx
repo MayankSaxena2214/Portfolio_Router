@@ -8,6 +8,7 @@ import blogapp from "../../assets/Blog.png"
 import job from "../../assets/Job.png"
 import rest from "../../assets/rest.png"
 import landing from "../../assets/LandingPage.png"
+import {Fade,JackInTheBox} from "react-awesome-reveal"
 const ProjectCard = ({ title, description, link, imageUrl }) => {
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-4">
@@ -34,31 +35,37 @@ const Projects = () => {
           <div className="mb-8 flex flex-wrap justify-center gap-8">
             {/* Project 1: Airbnb-like Website */}
             <div className="w-full sm:w-1/2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <Fade>
   <ProjectCard
     title="Airbnb-like Website"
     description="This responsive Airbnb-like website features user authentication, dynamic property listings, and booking functionalities. Built with modern web technologies, including React for the frontend and Node.js with Express for the backend, it provides a seamless user experience for exploring and booking accommodations, highlighting robust frontend development and backend API integration."
     link="https://airbnb-8pav.onrender.com"
     imageUrl={Airbnb}
   />
+</Fade>
 </div>
 
             {/* Project 2: Blog App */}
             <div className="w-full sm:w-1/2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <Fade>
   <ProjectCard
     title="Blog Website"
     description="Developed a blog application with user authentication, CRUD operations, and a rich text editor. Ensured responsive design and seamless integration between front-end and back-end."
     link="https://blog-frontend-hy4a.onrender.com/"
     imageUrl={blogapp}
   />
+  </Fade>
 </div>
             {/* Project -3 */}
             <div className="w-full sm:w-1/2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            <Fade>
   <ProjectCard
     title="Job Portal"
     description="Built a job portal with MongoDB, Express, React, and Node.js, featuring job postings, application tracking, and user management, demonstrating expertise in both front-end and back-end development"
     link="https://jobportalfrontend-1-0zvc.onrender.com/"
     imageUrl={job}
   />
+  </Fade>
 </div>
           </div>
 
@@ -69,6 +76,7 @@ const Projects = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
   {/* Project 1: Simon Game */}
+  <JackInTheBox>
   <ProjectCard
     className="transition-transform transform hover:scale-105 hover:shadow-lg"
     title="Simon Game"
@@ -76,8 +84,10 @@ const Projects = () => {
     link="https://simon-says-zsng.onrender.com"
     imageUrl={simon}
   />
+  </JackInTheBox>
 
   {/* Project 2: Todo */}
+  <JackInTheBox>
   <ProjectCard
     className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
     title="Todo App"
@@ -85,8 +95,10 @@ const Projects = () => {
     link="https://simon-says-zsng.onrender.com"
     imageUrl={todo}
   />
+  </JackInTheBox>
 
   {/* Project 3: Gallery Using Grid */}
+  <JackInTheBox>
   <ProjectCard
     className="transition-transform transform hover:scale-105 hover:shadow-lg"
     title="Gallery Using Grid"
@@ -94,8 +106,9 @@ const Projects = () => {
     link="https://gallery-using-grid.onrender.com"
     imageUrl={gallery}
   />
-
+  </JackInTheBox>
   {/* Project 4: REST API */}
+  <JackInTheBox>
   <ProjectCard
     className="transition-transform transform hover:scale-105 hover:shadow-lg"
     title="REST API"
@@ -103,8 +116,10 @@ const Projects = () => {
     link="https://rest-api-cygw.onrender.com"
     imageUrl={rest}
   />
+  </JackInTheBox>
 
   {/* Project 5: Landing Page */}
+  <JackInTheBox>
   <ProjectCard
     className="transition-transform transform hover:scale-105 hover:shadow-lg"
     title="Landing Page"
@@ -112,8 +127,9 @@ const Projects = () => {
     link="https://octanet-may1.onrender.com"
     imageUrl={landing}
   />
-
+  </JackInTheBox>
   {/* Project 6: Spotify Clone */}
+  <JackInTheBox>
   <ProjectCard
     className="transition-transform transform hover:scale-105 hover:shadow-lg"
     title="Spotify Clone"
@@ -121,6 +137,7 @@ const Projects = () => {
     link="https://spotifyclone-kgia.onrender.com"
     imageUrl={Spotify}
   />
+  </JackInTheBox>
 </div>
 
           </div>

@@ -11,6 +11,7 @@ import Html from '../../assets/Html.png';
 import Mysql from '../../assets/Mysql.png';
 import Octanet from '../../assets/Octanet.png';
 import Python from '../../assets/Python.png';
+import {Zoom} from "react-awesome-reveal"
 const certifications = [
   { 
     organization: 'Udemy', 
@@ -92,6 +93,7 @@ function Certifications() {
       <h2 className="text-4xl font-bold mb-8">Certifications</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {certifications.map((cert, index) => (
+          <Zoom>
           <div 
             key={index} 
             className="bg-gray-800 p-4 rounded-lg shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl"
@@ -114,6 +116,7 @@ function Certifications() {
               </a>
             </div>
           </div>
+          </Zoom>
         ))}
       </div>
     </div>

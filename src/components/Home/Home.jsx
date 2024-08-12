@@ -1,12 +1,14 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect';
 import ProfileImage from '../../assets/Profile.png';
-import "./Home.css"
+import "./Home.css";
+import {Slide} from "react-awesome-reveal";
 function Home() {
   return (
     
     <div className=" mt-0">
       {/* //Now we want the imagediv and text div on the center on the same line so we have to use the flexbox */}
+      <Slide>
       <div className="mt-16 flex flex-col items-center justify-center bg-black">
   <div className="main1 flex justify-center items-center w-full bg-black">
     <div><img className="h-80 w-80" src={ProfileImage} alt="Profile" /></div>
@@ -28,6 +30,7 @@ function Home() {
     </div>
   </div>
 </div>
+</Slide>
 </div>
     
   )
